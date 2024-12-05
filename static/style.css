@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700');
+
+ * {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Lato', san-serif;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+.container {
+    background-color: #fafafa;
+    transform-origin:top left;
+    transition: transform 0.5 linear;
+    transition: transform 0.4s ease;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+   }
+
+
+h1 {
+    margin-top: 1.5em;
+    font-family: 'Arsenal';
+    font-size: 3em;
+    letter-spacing: 2px;
+    }
+
+h2 {
+    margin-top: 2em;
+    font-size: 1.5em;
+    }
+
+p   {
+    margin-bottom: 1em;
+    }
+  
+.button {
+    background-color:  white; /* Primary color */
+    color: #555; /* Text color */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    padding: 10px 20px; /* Padding for size */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Modern button styling */
+.modern-button {
+    background-color:  #555; /* Primary color */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    padding: 10px 20px; /* Padding for size */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.modern-button:hover {
+    background-color: #444; /* Slightly darker green */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Larger shadow */
+    transform: translateY(-2px); /* Lift button slightly */
+}
+
+/* Active (pressed) effect */
+.modern-button:active {
+    transform: translateY(1px); /* Push down slightly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+}
+
+
+/* Custom label styling */
+.large-input {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    width: 600px; 
+    height: 80px;
+}
+
+
+.response {
+    font-family: Arial, sans-serif;
+    color: #333; 
+    line-height: 1.5em;
+
+}
