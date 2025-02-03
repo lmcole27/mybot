@@ -1,9 +1,3 @@
-// const converter = new showdown.Converter();
-
-// function convertMarkdownToHTML(markdown) {
-//     return converter.makeHtml(markdown);
-// }
-
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('question-form');
     const responseContainer = document.getElementById('response');
