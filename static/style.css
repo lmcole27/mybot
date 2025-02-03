@@ -115,3 +115,16 @@ p   {
     line-height: 1.5em;
 
 }
+
+.response p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+#questionAskedHeader {
+    display: none;
+}
+
+#responseHeader {
+    display: none;
+}

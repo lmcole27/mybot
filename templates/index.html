@@ -5,60 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/favicon.ico') }}"/>
     <link rel="stylesheet" href="/static/style.css">
-
-
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <title>Medusa Codes - Chatbot</title>
   </head>
   
-  <body>
+<body>
 <div class="container">
   <div class="content">
 
-    <body>
         <h1>Bot</h1>
         <h2>Ask me a question</h2>
-        <form action="/" method="POST" enctype="multipart/form-data">
-            <input type="text" id="question" name="question" placeholder="Enter your question" class= large-input>
+
+        <form id="question-form">
+            <input type="text" id="question" name="question" placeholder="Enter your question" class="large-input" required>
             <button type="submit" class="modern-button">Submit</button>
         </form>
+            <h2 id="questionAskedHeader">You Asked</h2>
+            <div id="questionAsked"></div>
+            <h2 id="responseHeader">Response</h2>
+            <div id="response" class="response"></div>
 
-        <body>
-            <h2>Response</h2>
-
-            <div class="text-red-600 text-xl font-semibold pt-6">
-                {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                <ul class=flashes>
-                {% for message in messages %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-                </ul>
-                {% endif %}
-                {% endwith %}
-            </div>
-        
-            <div id="response">
-
-            <p class="response">{{  answer  }} </pp>
-
-            </div>
-            <!-- <script>
-                const responseDiv = document.getElementById('response');
-                const eventSource = new EventSource('/stream'); // Connect to the Flask stream endpoint
-        
-                eventSource.onmessage = function(event) {
-                    responseDiv.textContent += event.data; // Append new data
-                };
-        
-                eventSource.onerror = function() {
-                    console.error("Error in event source.");
-                    eventSource.close();
-                };
-            </script> -->
-        </p>
-        <br><br>
-    </body>
-</div>
+  </div>
 </div>
 
 <script src="/static/script.js"></script>
