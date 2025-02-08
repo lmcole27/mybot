@@ -1,3 +1,6 @@
 OpenAI
 Flask
 python-dotenv
+chromadb
+chromadb.utils
+sentence-transformers

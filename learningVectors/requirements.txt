@@ -3,3 +3,7 @@ spacy # python -m pip install spacy
 spacy download en_core_web_md # python -m spacy download en_core_web_md
 sentence-transformers
 chromadb
+chromadb.utils
+polars
+sympy==1.13.1
+pathlib

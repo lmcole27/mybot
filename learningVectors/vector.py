@@ -1,6 +1,7 @@
 #https://realpython.com/chromadb-vector-database/
 
 import numpy as np
+import spacy # type: ignore
 
 v1 = np.array([1, 0])
 v2 = np.array([0, 1])
@@ -34,7 +35,7 @@ f = v1 @ v3
 
 # v3 makes a 45 degree angle with both v1 and v2. This means that v3 will have a non-zero dot product with v1 and v2. This also means that v3 is equally related to both v1 and v2. In general, the smaller the angle between two vectors, the more they point toward a common direction.
 
-import spacy
+
 
 nlp = spacy.load("en_core_web_md")
 

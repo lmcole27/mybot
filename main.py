@@ -1,10 +1,24 @@
 from openai import OpenAI
 from flask import Flask, render_template, request, Response, stream_with_context
+import chromadb
+import pandas as pd
+from io import StringIO
+from sentence_transformers import SentenceTransformer
+from cosine_similarity import compute_cosine_similarity
+from query import chatbot_query 
 
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
+
+
+# # Load Sentence Transformer model
+# model = SentenceTransformer("all-MiniLM-L6-v2")
+
+# # Initialize ChromaDB client
+# chroma_client = chromadb.Client()
+# collection = chroma_client.get_collection(name="insurance_classes")
 
 #API INFO
 client = OpenAI(api_key=os.environ['OPENAI_API_KEY'], organization=os.environ['ORGANIZATION'], project=os.environ['PROJECT'])
@@ -45,8 +59,13 @@ def generate():
 
     return Response(stream_with_context(generate()), mimetype='text/plain')
 
-#RUN THE WEBAPP
 
+# Example Usage:
+user_input = "Which industries have the highest insurance rates?"
+response = chatbot_query(user_input)
+print(response)
+
+#RUN THE WEBAPP
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
 
