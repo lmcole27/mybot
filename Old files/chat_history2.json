@@ -1,0 +1,34 @@
+[
+    {
+        "sender": "user",
+        "message": "What's the weather today?"
+    },
+    {
+        "sender": "bot",
+        "message": "It's sunny with a high of 75\u00b0F."
+    },
+    {
+        "sender": "user",
+        "message": "What's the weather today?"
+    },
+    {
+        "sender": "bot",
+        "message": "It's sunny with a high of 75\u00b0F."
+    },
+    {
+        "sender": "user",
+        "message": "What's the weather today?"
+    },
+    {
+        "sender": "bot",
+        "message": "It's sunny with a high of 75\u00b0F."
+    },
+    {
+        "sender": "user",
+        "message": "What's the weather today?"
+    },
+    {
+        "sender": "bot",
+        "message": "It's sunny with a high of 75\u00b0F."
+    }
+]
