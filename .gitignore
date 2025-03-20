@@ -177,3 +177,8 @@ export/
 package-lock.json
 package.json
 tailwind.config.json
+
+chroma.sqlite3
+/learningVectors/car_review_embeddings
+/learningVectors/chroma_data
+/learningVectors/data
