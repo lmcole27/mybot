@@ -1,11 +1,14 @@
 import json
+from history import history_cleanup
 
-print("hello world")
-with open ("chat_history.json") as jsonfile:
-    conversationHistory = json.load(jsonfile)
-print(conversationHistory, "1")
+# print("hello world")
+# with open ("chat_history.json") as jsonfile:
+#     conversationHistory = json.load(jsonfile)
+# print(conversationHistory, "1")
 
-with open('chat_history.json') as user_file:
-  file_contents = user_file.read()
+# with open('chat_history.json') as user_file:
+#   file_contents = user_file.read()
 
-print(file_contents)
+# print(file_contents)
+
+history_cleanup() 

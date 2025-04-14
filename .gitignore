@@ -182,4 +182,7 @@ chroma.sqlite3
 /learningVectors/car_review_embeddings
 /learningVectors/chroma_data
 /learningVectors/data
-chat_history.json
+history/
+chroma_data/
+sourceData/
+sourcePDF/

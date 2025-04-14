@@ -1,5 +1,6 @@
 OpenAI
 Flask
+flask-cors
 python-dotenv
 chromadb
 chromadb.utils
